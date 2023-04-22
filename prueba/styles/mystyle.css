@@ -1,0 +1,105 @@
+*{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 100;
+}
+
+.btn-dark{
+    background-color: orange;
+}
+.formulario{
+    background-color:rgb(188, 213, 226, 25%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 70%;
+    border-radius: 10px;
+}
+.formulario input,.formulario select{ 
+    /* formulario select es la opción de servicio, la lista desplegable*/
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 90, 128);
+    
+   
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+.titulo-nav{
+    font-size:20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: rgb(22, 26, 40);
+    color:antiquewhite;
+}
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    z-index: 10;
+    background-color:rgba(0,0,0,0.6);
+}
+.container tr{
+    color:bisque;
+}
+.table{
+    background-color:rgb(188, 213, 226, 15%);
+}
+
+#carousel{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -10;
+    position: absolute;
+}
+.SeccionRegistro{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top:30px;
+    justify-content: center;
+    display: block;
+    
+}
+.container{
+    margin-top: 25px;
+}
+.infoPagina{
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    margin:auto;
+    margin-left: 30px;
+    bottom: 0;
+    position: absolute;
+    padding: 0;
+}
+
+.container .table{
+    margin-bottom: 20px;
+}

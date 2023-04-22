@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>Hogwarts</title>
+	<!-- Link de icon remix -->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+	<!-- Libreria de sweetalert 2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #213472;">
+        <div class="container-fluid">
+          <a class="titulo-nav" href="https://www.wizardingworld.com/"><b>Colegio Hogwarts de Magia y Hechicería</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" style="margin-left:28%;">
+              <a class="nav-link active" aria-current="page" href="#" style="color:white;">Home</a>
+              <a class="nav-link" href="https://www.wizardingworld.com/quiz" style="color:white;">Features</a>
+              <a class="nav-link" href="https://harrypottershop.com/" style="color:white;">Pricing</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+  </header>
+  
+  <div class="maincontainer">
+      <div id="carousel">
+          <div id="carouselExampleInterval" data-bs-touch="false" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000" >
+                <img src="imgs/potter2.jpg" class="d-block w-100"  alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000" >
+                <img src="imgs/potter1.jpg" class="d-block w-100"  alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="imgs/potter3.jpg" class="d-block w-100"  alt="...">
+              </div>
+            </div>
+            
+            
+            
+          </div>
+      </div>
+      
+       
+      <div class="SeccionRegistro">
+        <h1>Bienvenidos al sistema de registro escolar</h1>
+          <h2 style="margin-bottom: 15px;">Registrar nuevo estudiante</h2>
+          <div class="formulario" id="formulariocalif">
+              <!--matrícula (id automatico), nombre, coreo, genero, campus, calificacion A, Calificacion B, Calificacion C-->
+              <input type="text" placeholder="Ingresa el nombre completo" id="txtNombre">
+              <input type="text" placeholder="Ingresa el correo" id="txtCorreo">
+              <select id="selGenero">
+                  <option value="" disabled selected>-- Selecciona un género --</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino">Femenino</option>
+                  <option value="Indefinido">Prefiero no mencionarlo...</option>
+              </select>
+              <select id="selCampus">
+                  <option value="" disabled selected>-- Selecciona un campus --</option>
+                  <option value="CampusA">Campus A</option>
+                  <option value="CampusB">Campus B</option>
+                  <option value="CampusC">Campus C</option>
+              </select>
+              <input type="text" placeholder="Ingresa la calificación A" id="txtCalifA">
+              <input type="text" placeholder="Ingresa la calificación B" id="txtCalifB">
+              <input type="text" placeholder="Ingresa la calificación C" id="txtCalifC">
+              
+              <button class="btn btn-primary" onclick="registro();">Registrar</button>
+
+          </div>
+
+          
+        <section class="container">
+          <h2 style="margin-bottom: 15px;">Lista de estudiantes</h2>
+          <table class="table">
+              <thead>
+                  <th>#</th>
+                  <th>Nombre</th>
+                  <th>Calificación #1</th>
+                  <th>Calificación #2</th>
+                  <th>Calificación #3</th>
+                  <th>Promedio</th>
+                  <th></th>
+              </thead>
+              <tbody id="alumnosTabla">                 
+              </tbody>   
+          </table>
+        </section>
+        <h3 class="infoPagina">Autorizado por el Ministerio de Magia®. Última fecha de actualización: Abril de 2023.</h3>    
+    </div>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="scripts/register.js"></script>
+</body>
+</html>
